@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idukki Spices (Coming Soon)</title>
+    <link href="./build.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="text-center bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">Coming Soon!</h1>
+      <p class="text-lg text-gray-600 mb-6">Our website is under construction. We'll be here soon with our new site. Stay tuned!</p>
+      <div class="bg-yellow-100 text-yellow-800 p-4 rounded-lg mb-6">
+        <p class="text-lg font-semibold">This domain is for sale!</p>
+        <p class="mt-2">If you're interested in purchasing it, please enter your WhatsApp number below.</p>
+      </div>
+      <form id="contact-form" class="space-y-4">
+        <input type="tel" id="phone" name="phone" placeholder="Enter your WhatsApp number" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required />
+        <button type="submit" class="w-full bg-yellow-500 text-white p-3 rounded-lg font-semibold hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500">Send Inquiry</button>
+      </form>
+      <div id="success-modal" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h2 class="text-lg font-semibold">Success!</h2>
+          <p>Your inquiry has been sent successfully.</p>
+          <button onclick="document.getElementById('success-modal').classList.add('hidden');" class="mt-4 bg-yellow-500 text-white p-2 rounded-lg">Close</button>
+        </div>
+      </div>
+      <div id="error-modal" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h2 class="text-lg font-semibold">Error!</h2>
+          <p>There was a problem sending your inquiry. Please try again.</p>
+          <button onclick="document.getElementById('error-modal').classList.add('hidden');" class="mt-4 bg-red-500 text-white p-2 rounded-lg">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
